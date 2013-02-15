@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filters_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/alberelloport" />
+    
+    <!-- IMMAGINE CENTRALE PER ALLINEARE SOPRA IL LOGO E SOTTO I BOTTONI -->
+    <ListView
+		android:id="@+id/artwork_list"
+		android:layout_width="match_parent" 
+	    android:layout_height="match_parent"
+	    android:background="#00000000"
+		android:cacheColorHint="#00000000"
+		android:listSelector="@drawable/listitem_selector"
+		android:scrollbars="none"
+	/>
+    
+    <ImageView
+            android:id="@+id/footer_blu"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/footer"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"/>
+    
+	<ImageView
+        android:id="@+id/image_nosaved"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/nosaved"/>
+</RelativeLayout> 

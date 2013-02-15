@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#aa000000">
+	<!--  
+    <ImageView
+        android:contentDescription="@string/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dialogbg" />
+    -->
+    <TextView
+        android:id="@+id/exittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/TimeFont_White_Dialog"
+        android:text="@string/exit" />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/exittext"
+        android:layout_toLeftOf="@+id/exittext"
+        android:background="@drawable/check" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/yes"
+        android:layout_alignBottom="@+id/yes"
+        android:layout_toRightOf="@+id/exittext"
+        android:background="@drawable/x" />
+
+</RelativeLayout> 

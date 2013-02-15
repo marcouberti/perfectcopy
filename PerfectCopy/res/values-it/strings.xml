@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Perfect Copy</string>
+    <string name="exit">Uscire ?</string>
+    <string name="seguici">Seguici</string>
+    <string name="saving">Salvataggio . . .</string>
+    <string name="sharewith">Condividi con</string>
+    <string name="artworkdeleted">Opera cancellatta</string>
+    <string name="impossibletodelete">Impossibile cancellare l\'opera</string>
+    <string name="artworksaved">Opera salvata</string>
+    <string name="impossibletosave">Impossibile salvare l\'opera</string>
+    
+    <string name="pen_settings">Configurazione penna</string>
+    <string name="pen_settings_preset_empty">Non ci sono preset</string>
+    <string name="pen_settings_preset_delete_title">Cancella</string>
+    <string name="pen_settings_preset_delete_msg">Il preset verrà cancellato.</string>
+    <string name="eraser_settings">Configurazione gomma</string>
+    <string name="delete_all">Cancella tutto</string>
+    <string name="delete_all_msg">Tutti i dati verranno cancellati</string>
+    <string name="text_settings">Configurazione testo</string>
+    <string name="text_settings_tab_font">Font</string>
+    <string name="text_settings_tab_paragraph">Paragrafo</string>
+    <string name="text_settings_tab_paragraph_align">Allineamento</string>
+    <string name="textbox_hint">Inserire testo</string>
+    <string name="filling_settings">Configurazione riempimento</string>
+</resources>

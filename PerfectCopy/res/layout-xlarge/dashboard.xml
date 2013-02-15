@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/canvas_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrepeated"
+    >
+
+    <com.samsung.spensdk.SCanvasView
+        android:id="@+id/canvas_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/toolBar" />
+
+    <ImageView
+        android:id="@+id/image_view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/trasparent"
+        android:scaleType="matrix"
+        android:layout_below="@+id/toolBar" />
+    <ImageView
+        android:id="@+id/image_view_original"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/trasparent"
+        android:scaleType="matrix"
+        android:layout_below="@+id/toolBar" />
+
+    <LinearLayout
+	    android:id="@+id/toolBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    android:orientation="horizontal"
+	    android:background="@drawable/header"
+	    android:layout_alignParentTop="true">
+	    <FrameLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content">
+	        <ImageView
+		        android:id="@+id/settingBtnColor"
+		        android:contentDescription="Tools"
+		        android:layout_width="70dp"
+		        android:layout_height="70dp"
+		        android:src="@drawable/toolscolor"/>
+	        <Button
+		        android:id="@+id/settingBtn"
+		        android:layout_width="70dp"
+		        android:layout_height="70dp"
+		        android:background="@drawable/tools"/>
+	    </FrameLayout>
+	    <Button
+	        android:id="@+id/eraseBtn"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/rubber_deselected" />
+	    <Button
+	        android:id="@+id/undoBtn"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/undo_disabled" />
+	    <Button
+	        android:id="@+id/redoBtn"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/rendo_disabled" />
+	    <Button
+	        android:id="@+id/eyeBtn"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/colorpicker_deselected" />
+	    <Button
+	        android:id="@+id/shareBtn"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/share1" />
+	    <Button
+	        android:id="@+id/saveBtn"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/save" />
+	    
+	    <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="right">
+		    <LinearLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:orientation="vertical"
+			    android:gravity="center_vertical">
+			    <TextView
+			        android:id="@+id/scoreText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="0 %"
+			        android:textAppearance="@style/TimeFont_Black_Score" />
+		    </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_loading"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/loading"/>
+
+</RelativeLayout> 

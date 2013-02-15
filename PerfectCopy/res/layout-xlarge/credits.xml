@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0dip"
+        android:background="@drawable/sfondo"
+        >
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/alberello" />
+        <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center_horizontal"
+		    android:layout_gravity="center_horizontal"
+		    >
+		    <LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:gravity="center_vertical"
+		    >
+		    <!--  
+		    <ImageView android:id="@+id/logoimage"
+					               android:layout_width="wrap_content"
+					               android:layout_height="wrap_content"
+					               android:src="@drawable/logo"
+					               android:layout_gravity="center_horizontal"
+			              		   android:gravity="center_horizontal"
+					               />
+					               -->
+			<ScrollView android:id="@+id/scrollcredits"
+					               android:layout_width="wrap_content"
+					               android:layout_height="fill_parent"
+					               android:scrollbars="none"
+					               android:fadingEdge="none">
+					             <LinearLayout
+								    android:layout_width="wrap_content"
+								    android:layout_height="wrap_content"
+								    android:orientation="vertical"
+								    android:gravity="center_horizontal"
+								    android:layout_gravity="center_horizontal"
+								    >
+								        <!-- ##### NON RIMUOVERE IMMAGINE DI TRASPARENZA INIZIALE -->
+								    	
+								    	<ImageView 
+								    		   android:id="@+id/scrolltrasptop"
+								               android:layout_width="20dp"
+								               android:layout_height="400dp"
+								               android:src="@drawable/trasparent"
+								               />
+										<ImageView 
+											   android:id="@+id/logoimage"
+								               android:layout_width="500dp"
+								               android:layout_height="372dp"
+								               android:src="@drawable/logo"
+								               android:layout_gravity="center_horizontal"
+						              		   android:gravity="center_horizontal"
+								               />
+						               <TextView 
+								        	   android:id="@+id/developed2"
+								        	   android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:text="www.invenktion.com"
+								               android:textAppearance="@style/CreditsText_Nero"
+								               android:paddingTop="0dp"
+								               android:paddingBottom="20dp"/>
+								        
+								        <TextView android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:text="Software Engineering"
+								               android:paddingTop="40dp"
+								               android:paddingBottom="20dp"
+								               android:textAppearance="@style/CreditsTextTitle_Azzurro"
+								               android:id="@+id/leadprogrammertext"/>
+								        <TextView android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:text="Marco Uberti"
+								               android:textAppearance="@style/CreditsText_Nero"
+								               android:id="@+id/leadprogrammertextvalue"/>
+								        <TextView android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:text="Creative Designer"
+								               android:paddingTop="40dp"
+								               android:paddingBottom="20dp"
+								               android:textAppearance="@style/CreditsTextTitle_Azzurro"
+								               android:id="@+id/creativedesignertext"/>
+								        <TextView android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:text="Andrea Grilli"
+								               android:textAppearance="@style/CreditsText_Nero"
+								               android:id="@+id/creativedesignertextvalue"/>
+								        <TextView android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:text="Game design"
+								               android:paddingTop="40dp"
+								               android:paddingBottom="20dp"
+								               android:textAppearance="@style/CreditsTextTitle_Azzurro"
+								               android:id="@+id/gamedesigntext"/>
+								        <TextView android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:textAppearance="@style/CreditsText_Nero"
+								               android:text="Andrea Grilli"
+								               android:id="@+id/gamedesigntextvalue"/>
+								         <TextView android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:textAppearance="@style/CreditsText_Nero"
+								               android:text="Marco Uberti"
+								               android:id="@+id/gamedesigntextvalue2"/>
+								       
+								         <TextView 
+								        	   android:id="@+id/follow1"
+								        	   android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:text="@string/seguici"
+								               android:textAppearance="@style/CreditsText_Nero"
+								               android:paddingTop="80dp"
+								               android:paddingBottom="20dp"/>
+								        
+								         <TextView 
+								        	   android:id="@+id/whois1"
+								        	   android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:text="www.invenktion.com"
+								               android:textAppearance="@style/CreditsText_Nero"
+								               android:paddingTop="40dp"
+								               android:paddingBottom="20dp"/>
+								        <ImageView 
+								    		   android:id="@+id/invenktionlogo"
+								               android:layout_width="600dp"
+								               android:layout_height="176dp"
+								               android:src="@drawable/invenktionbig"
+								               android:paddingTop="40dp"
+								               android:paddingBottom="20dp"
+								               />
+								        <!-- ##### NON RIMUOVERE IMMAGINE DI TRASPARENZA FINALE -->
+								        <ImageView 
+								               android:layout_width="60dp"
+								               android:layout_height="60dp"
+								               android:src="@drawable/trasparent"
+								               />
+								        <!-- ##### NON RIMUOVERE IMMAGINE DI TRASPARENZA FINALE -->
+								        <ImageView 
+								    		   android:id="@+id/scrolltraspbottom"
+								               android:layout_width="wrap_content"
+								               android:layout_height="wrap_content"
+								               android:src="@drawable/trasparent"
+								               />
+								  </LinearLayout>
+			</ScrollView>
+		</LinearLayout>
+		</LinearLayout>
+		<ImageView
+            android:id="@+id/footer_blu"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:src="@drawable/footer"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

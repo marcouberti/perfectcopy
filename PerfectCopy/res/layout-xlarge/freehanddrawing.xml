@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/canvas_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrepeated" >
+
+    <com.samsung.spensdk.SCanvasView
+        android:id="@+id/free_hand_canvas_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+	    android:id="@+id/free_hand_toolBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    android:orientation="horizontal"
+	    android:background="@drawable/header"
+	    android:layout_alignParentTop="true">
+	    <FrameLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content">
+	        <ImageView
+		        android:id="@+id/settingBtnColor"
+		        android:contentDescription="Tools"
+		        android:layout_width="70dp"
+		        android:layout_height="70dp"
+		        android:src="@drawable/toolscolor"/>
+	        <Button
+		        android:id="@+id/free_hand_settingBtn"
+		        android:layout_width="70dp"
+		        android:layout_height="70dp"
+		        android:background="@drawable/tools"/>
+	    </FrameLayout>
+	    <Button
+	        android:id="@+id/free_hand_eraseBtn"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/rubber_deselected" />
+	    <Button
+	        android:id="@+id/free_hand_undoBtn"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/undo_disabled" />
+	    <Button
+	        android:id="@+id/free_hand_redoBtn"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/rendo_disabled" />
+	     <Button
+	        android:id="@+id/clipartBtn"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:background="@drawable/clipart" />
+	    <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="right">
+		    <Button
+		        android:id="@+id/free_hand_okBtn"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="70dp"
+		        android:layout_height="70dp"
+		        android:background="@drawable/check" />
+	    </LinearLayout>
+	</LinearLayout>
+</RelativeLayout> 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TimeFont_Black_Dialog">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">70dp</item>
+    </style>
+    <style name="TimeFont_White_Dialog">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">70dp</item>
+    </style>
+    <style name="TimeFont_Black_Score">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+    <style name="CreditsTextTitle_Azzurro">
+        <item name="android:textColor">#ed5923</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+    <style name="CreditsText_Nero">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+    <style name="ArtworkText_Nero">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+</resources>
